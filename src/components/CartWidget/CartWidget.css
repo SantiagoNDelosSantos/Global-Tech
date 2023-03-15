@@ -1,0 +1,16 @@
+.LogoCarrito{
+    width: 5em;
+    height: 5em;
+}
+
+.LogoCarritoZoom:hover{
+    transform: scale(1.05);
+    transition: all .4s;
+}
+
+.DivCarrito{
+    margin-right:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

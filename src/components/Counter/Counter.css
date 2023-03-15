@@ -1,0 +1,16 @@
+.Contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ModalCounter{
+    border: solid 0.20em black;
+    border-radius: 2em;
+    width: 20vw;
+    margin-right: 40vw;
+    margin-left: 40vw;
+    margin-top: 10vh;
+    padding: 1em;
+}

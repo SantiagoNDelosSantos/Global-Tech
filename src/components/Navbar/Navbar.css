@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lobster&family=Montserrat&display=swap');
+
 .Navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: solid 0.15em black;
 }
 
+.Logo {
+    font-family: "Lobster";
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.AllBtn{
+    display: flex;
+    gap: 2em;
+}
