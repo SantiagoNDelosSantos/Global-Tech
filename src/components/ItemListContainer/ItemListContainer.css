@@ -2,5 +2,13 @@
 
 .Bienvenidos{
     font-family: 'Montserrat';
-    margin-top: 3em;
+    padding: 2em;
+    padding-bottom: 0em;
+}
+.ILContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
 }

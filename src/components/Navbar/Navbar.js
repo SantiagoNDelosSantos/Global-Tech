@@ -13,12 +13,12 @@ const Navbar = ()  => {
 
             <div className="AllBtn">
 
+                <Button label="Home" callback={() =>console.log("Cel")}/>
                 <Button label="Celulares" callback={() =>console.log("Cel")}/>
                 <Button label="Tables" callback={() =>console.log("Tab")}/>
                 <Button label="Laptops" callback={() =>console.log("Lap")}/>
                 <Button label="Monitores" callback={() =>console.log("Mon")}/>
-                <Button label="Periféricos" callback={() =>console.log("Perif")}/>
-
+                
             </div>
 
             <div>

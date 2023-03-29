@@ -1,0 +1,35 @@
+.Card{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 25vw;
+    height: 30em;
+    margin: 2em;
+    border-radius: 2em; 
+    padding: 0.30em;
+    box-shadow: 4px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+.Card:hover{
+    background-color: rgba(0, 204, 255, 0.137);
+    transform: scale(1.01);
+    transition: all 0.3s;
+}
+
+.ImgCards{
+    width: 15vw;
+    height:auto 
+}
+
+.MarcModels{
+    font-family: 'Lato';
+    font-size: 1.50em;
+    line-height: 0.50em;
+    font-weight:bold;
+}
+
+.Precio{
+    font-size:1.20em;    
+    color: #00A650;
+}
