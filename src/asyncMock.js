@@ -3,10 +3,11 @@ const products = [{
         marca: `Apple`,
         modelo: `iPhone14`,
         color: `Morado`,
-        memoriaInterna: `128`,
-        memoriaRam: `6`,
-        camara: `48`,
-        precio: `484141`,
+        description:` 
+        Memoria Interna: 128GB -
+        Memoria Ram: 6GB -
+        Cámara: 48MPX.`,
+        precio: `484.141`,
         category: `Celulares`,
         img: `https://i.ibb.co/1ZpJYSd/iPhone14.png`,
         stock: `5`
@@ -16,10 +17,11 @@ const products = [{
         marca: `Samsung`,
         modelo: `GalaxyA13`,
         color: `Celeste`,
-        memoriaInterna: `64`,
-        memoriaRam: `4`,
-        camara: `50`,
-        precio: `74999`,
+        description:` 
+        Memoria Interna: 64GB -
+        Memoria Ram: 4GB -
+        Cámara: 50MPX.`,
+        precio: `74.999`,
         category: `Celulares`,
         img: `https://i.ibb.co/wSRYCjr/Galaxy-A13.png`,
         stock: `6`
@@ -29,10 +31,11 @@ const products = [{
         marca: `Motorola`,
         modelo: `MotoE20`,
         color: `Aqua`,
-        memoriaInterna: `32`,
-        memoriaRam: `4`,
-        camara: `13`,
-        precio: `37999`,
+        description:` 
+        Memoria Interna: 32GB -
+        Memoria Ram: 4GB -
+        Cámara: 13MPX.`,
+        precio: `37.999`,
         category: `Celulares`,
         img: `https://i.ibb.co/KLfHyJ3/MotoE20.png`,
         stock: `3`
@@ -42,12 +45,13 @@ const products = [{
         marca: `Apple`,
         modelo: `iPad 10 - A2696`,
         color: `Azul`,
-        pantalla: `10.9”`,
-        resolución: `2360px x 1640px`,
-        memoriaInterna: `64`,
-        memoriaRam: `4`,
-        cámara: `12`,
-        precio: `234499`,
+        description:` 
+        Pantalla: 10.9” -
+        Resolución: 2360PX x 1640PX -
+        Memoria Interna: 64GB -
+        Memoria Ram: 4GB -
+        Cámara: 12MPX.`,
+        precio: `234.499`,
         category: `Tablets`,
         img: `https://i.ibb.co/4Mf9PCv/i-Pad-10th.png`,
         stock: `3`
@@ -57,12 +61,13 @@ const products = [{
         marca: `Xiaomi`,
         modelo: `Pad 5`,
         color: `Cosmic gray`,
-        pantalla: `11”`,
-        resolución: `2560 px x 1600 px`,
-        memoriaInterna: `128`,
-        memoriaRam: `6`,
-        cámara: `13`,
-        precio: `243999`,
+        description:` 
+        Pantalla: 11” -
+        Resolución: 2560PX x 1600PX -
+        Memoria Interna: 128GB -
+        Memoria Ram: 6GB -
+        Cámara: 13MPX.`,
+        precio: `243.999`,
         category: `Tablets`,
         img: `https://i.ibb.co/4ZvzZGv/Xiaomi-Pad5.png`,
         stock: `4`
@@ -72,12 +77,13 @@ const products = [{
         marca: `Apple`,
         modelo: `iPad 10 - A2696`,
         color: `Rosa`,
-        pantalla: `10.9”`,
-        resolución: `2360px x 1640px`,
-        memoriaInterna: `256`,
-        memoriaRam: `4`,
-        cámara: `12`,
-        precio: `317499`,
+        description:` 
+        Pantalla: 10.9” -
+        Resolución: 2360PX x 1640PX -
+        Memoria Interna: 256GB -
+        Memoria Ram: 4GB -
+        Cámara: 12MPX.`,
+        precio: `317.499`,
         category: `Tablets`,
         img: `https://i.ibb.co/PWG6swT/i-Pad-10th-RS.png`,
         stock: `2`
@@ -87,13 +93,14 @@ const products = [{
         marca: `Asus`,
         modelo: `G513RM`,
         color: `Eclipse gray`,
-        pantalla: `15.6 "`,
-        resolución: `2560 px x 1440 px`,
-        procesador: `Ryzen 7`,
-        grafica: `NVIDIA RTX 3060`,
-        almacenamiento: `512`,
-        memoriaRam: `16`,
-        precio: `715999`,
+        description:`
+        Pantalla: 15.6” -
+        Resolución: 2560PX x 1440PX -
+        Procesador: Ryzen 7 -
+        Grafica: NVIDIA RTX 3060 -
+        Almacenamiento: 512GB -
+        Memoria Ram: 16GB.`,
+        precio: `715.999`,
         category: `Laptops`,
         img: `https://i.ibb.co/R7zjyyx/Asus-Rog-Strix-G15-G513-RM.png`,
         stock: `3`
@@ -103,13 +110,14 @@ const products = [{
         marca: `Asus`,
         modelo: `FX506LHB`,
         color: `Bonfire black`,
-        pantalla: `15.6 "`,
-        resolución: `1920 px x 1080 px`,
-        procesador: `Intel Core i5`,
-        grafica: `NVIDIA GeForce GTX 1650`,
-        almacenamiento: `512`,
-        memoriaRam: `16`,
-        precio: `378099`,
+        description:`
+        Pantalla: 15.6” -
+        Resolución: 1920PX x 1080PX -
+        Procesador: Intel Core i5 -
+        Grafica: NVIDIA GeForce GTX 1650 -
+        Almacenamiento: 512GB -
+        Memoria Ram: 16GB.`,
+        precio: `378.099`,
         category: `Laptops`,
         img: `https://i.ibb.co/VNdRQj5/Asus-TUF-FX506-LHB.png`,
         stock: `6`
@@ -119,13 +127,14 @@ const products = [{
         marca: `MSI`,
         modelo: `GL66`,
         color: `Negro`,
-        pantalla: `16”`,
-        resolución: `1920 px x 1080 px`,
-        procesador: `Intel Core i7`,
-        grafica: `NVIDIA GeForce RTX 3070`,
-        almacenamiento: `512`,
-        memoriaRam: `16`,
-        precio: `905000`,
+        description:`
+        Pantalla: 16” -
+        Resolución: 1920PX x 1080PX -
+        Procesador: Intel Core i7 -
+        Grafica: NVIDIA GeForce RTX 3070 -
+        Almacenamiento: 512GB -
+        Memoria Ram: 16GB.`,
+        precio: `905.000`,
         category: `Laptops`,
         img: `https://i.ibb.co/Y0DDpzJ/Msi-Gl66-11-ugk-001.png`,
         stock: `4`
@@ -134,12 +143,14 @@ const products = [{
         id: `10`,
         marca: `Samsung`,
         modelo: `C27RG50FQ`,
-        pantalla: `27”`,
-        resolución: `1920 px x 1080 px`,
-        tipoPantalla: `LED`,
-        frecuencia: `240`,
-        tiempoRespuesta: `4`,
-        precio: `131599`,
+        color: `Negro`,
+        description:`
+        Pantalla: 27" -
+        Resolución: 1920PX x 1080PX -
+        Tipo de Pantalla: LED -
+        Frecuencia: 240HZ -
+        Tiempo de respuesta: 4MS.`,
+        precio: `131.599`,
         category: `Monitores`,
         img: `https://i.ibb.co/v14tbj5/Samsung-CRG5.png`,
         stock: `9`
@@ -148,11 +159,13 @@ const products = [{
         id: `11`,
         marca: `Redragon`,
         modelo: `GM270F165`,
-        pantalla: `27”`,
-        resolución: `1920 px x 1080 px`,
-        tipoPantalla: `LED`,
-        frecuencia: `165`,
-        tiempoRespuesta: `4`,
+        color: `Negro`,
+        description:`
+        Pantalla: 27" -
+        Resolución: 1920PX x 1080PX -
+        Tipo de Pantalla: LED -
+        Frecuencia: 165HZ -
+        Tiempo de respuesta: 4MS.`,
         precio: `110.999`,
         category: `Monitores`,
         img: `https://i.ibb.co/6Pd4v8T/Redragon-Emerald-GM270-F165.png`,
@@ -162,11 +175,13 @@ const products = [{
         id: `12`,
         marca: `Samsung`,
         modelo: `F27T350FHL`,
-        pantalla: `27"`,
-        resolución: `1920 px x 1080 px`,
-        tipoPantalla: `LED`,
-        frecuencia: `75`,
-        tiempoRespuesta: `5`,
+        color: `Negro`,
+        description: `
+        Pantalla: 27" -
+        Resolución: 1920PX x 1080PX -
+        Tipo de Pantalla: LED -
+        Frecuencia: 75HZ -
+        Tiempo de respuesta: 5MS.`,
         precio: `68.909`,
         category: `Monitores`,
         img: `https://i.ibb.co/mRQQgtn/Samsung-F27-T350-FHL.png`,
@@ -179,5 +194,21 @@ export const getProducts = () => {
         setTimeout(() => {
             resolve(products)
         }, 2000)
+    })
+}
+
+export const getProductsById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === productId))
+         }, 1000)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+         }, 1000)
     })
 }

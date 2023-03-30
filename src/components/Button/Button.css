@@ -13,6 +13,10 @@
     text-transform: uppercase;
 }
 
+.Botones:hover{
+    color:#004182;
+}
+
 .Subrayado {
     background-image: linear-gradient(transparent 0%, transparent 94%, #000000 94%, #000000 100%);
     background-repeat: no-repeat;

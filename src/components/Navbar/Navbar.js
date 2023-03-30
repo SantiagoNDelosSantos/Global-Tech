@@ -1,24 +1,22 @@
 import "./Navbar.css"
 import Button from "../Button/Button"
 import CarWidget from "../CartWidget/CartWidget"
+import { Link } from "react-router-dom"
 
 const Navbar = ()  => {
     return(
 
         <nav className="Navbar">
 
-            <h1 className="Logo"> 
-                Global Tech
-            </h1>
+            <Link to='/' className="Logo">Global Tech</Link>
 
             <div className="AllBtn">
 
-                <Button label="Home" callback={() =>console.log("Cel")}/>
-                <Button label="Celulares" callback={() =>console.log("Cel")}/>
-                <Button label="Tables" callback={() =>console.log("Tab")}/>
-                <Button label="Laptops" callback={() =>console.log("Lap")}/>
-                <Button label="Monitores" callback={() =>console.log("Mon")}/>
-                
+                <Link to='/category/Celulares' className="Botones Subrayado">Celulares</Link>
+                <Link to='/category/Tablets' className="Botones Subrayado">Tablets</Link>
+                <Link to='/category/Laptops' className="Botones Subrayado">Laptops</Link>
+                <Link to='/category/Monitores' className="Botones Subrayado">Monitores</Link>
+
             </div>
 
             <div>

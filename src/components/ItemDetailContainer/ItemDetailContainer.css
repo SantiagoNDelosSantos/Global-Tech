@@ -1,0 +1,18 @@
+.ItDetailContainer{
+    background-color: rgba(166, 210, 216, 0.425);
+    margin: 3em;
+    height: 69vh;
+    border-radius: 3em;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carga{
+    font-family: 'Lato';
+    margin: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
