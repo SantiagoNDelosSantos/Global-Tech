@@ -12,15 +12,22 @@
 }
 
 .Card:hover{
-    background-color: rgba(166, 210, 216, 0.425);
+    background-color: rgba(201, 201, 201, 0.425);
     transform: scale(1.01);
     transition: all 0.3s;
 }
 
+
 .ImgCards{
     width: 15vw;
     height:auto; 
+    display:flex; 
+    align-items: center;
+    justify-items: center;
 }
+
+
+
 
 .MarcModels{
     font-family: 'Lato';

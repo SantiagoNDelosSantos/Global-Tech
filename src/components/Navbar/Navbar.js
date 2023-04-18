@@ -1,31 +1,44 @@
 import "./Navbar.css"
-import Button from "../Button/Button"
-import CarWidget from "../CartWidget/CartWidget"
+import ButtonS from "../Button/Button"
+
 import { Link } from "react-router-dom"
 
+import OffcanvasS from "../OffCanvasMenu/OffCanvasMenu"
+import Buscador from "../Buscador/Buscador"
+import CarWidget from "../CartWidget/CartWidget"
+
+
+
 const Navbar = ()  => {
+
     return(
 
         <nav className="Navbar">
 
-            <Link to='/' className="Logo">Global Tech</Link>
+            <div className="GridNavbar">
 
-            <div className="AllBtn">
+                <div className="GridOffCanvas"> 
+                    <OffcanvasS/>
+                </div>
+                
+                <div className="GridLogo Logo">
+                    <Link to='/' className="Logo">Global Tech</Link>
+                </div>
+                
+                <div className="GridBusqueda">
+                    <Buscador/>
+                </div>
 
-                <Link to='/category/Celulares' className="Botones Subrayado">Celulares</Link>
-                <Link to='/category/Tablets' className="Botones Subrayado">Tablets</Link>
-                <Link to='/category/Laptops' className="Botones Subrayado">Laptops</Link>
-                <Link to='/category/Monitores' className="Botones Subrayado">Monitores</Link>
+                <div className="GridCarrito">
+                    <CarWidget/>
+                </div>
 
-            </div>
-
-            <div>
-                <CarWidget/>
             </div>
 
         </nav>
 
     )
+
 }
 
 export default Navbar

@@ -1,16 +1,37 @@
-.LogoCarrito{
-    width: 5em;
-    height: 5em;
+.CarritoIcon{
+    
+    color: #ffffff; 
+    width: 2em; 
+    height: 3em; 
+    margin-top: 9px;
+
+    @media (min-width: 900px) {
+        margin-top: 0px !important;
+    }
+
 }
 
-.LogoCarritoZoom:hover{
-    transform: scale(1.05);
-    transition: all .4s;
+.CarritoIcons:hover{
+    transform: scale(1.1);
 }
 
-.DivCarrito{
-    margin-right:25px;
+.svg-inline--fa {
+    vertical-align: none;
+}
+
+.Cart{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1em;
+}
+
+.UndCarrito{
+    margin-top: 8px;
+    color: white;
+    margin-bottom: 0rem;
+
+    @media (min-width: 900px) {
+        margin-top: -5px;
+    }
 }

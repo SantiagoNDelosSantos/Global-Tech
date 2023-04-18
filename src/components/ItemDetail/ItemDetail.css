@@ -1,8 +1,19 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto:wght@500&display=swap');
+
 .ItemDetail{
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    gap: 8em;
+    gap: 0em;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 8em;
+    }
+
 }
 
 .ImgDetails{
@@ -14,6 +25,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(90deg,#f0f0f0bd,#f3f3f3a4);
+    background-size:cover;
+    border-radius: 1EM;
 }
 
 .DetDerch{
@@ -25,38 +39,48 @@
 }
 
 .Prest{
-    font-size: 2em;  
+    font-size: 2.60em;  
     line-height: 2em; 
+    font-family: 'Playfair';
+    text-align: left;
 }
 
 .Especific{
-    font-size: 1.20em;
-    text-align: justify
+    font-size: 1em;
+    text-align:left;
+    font-family:'Montserrat' !important;
 }
+
 .Detalles{
-    font-size: 1.20em;
-    text-align: center
+    font-size: 1.40em;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+    align-items:center;
 }
 
 .Carrito{
     font-family: 'Lato';
-    color: rgb(0, 0, 0);
-    background-color:rgb(218, 218, 218);
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color:rgb(0, 0, 0);
     text-decoration: none;
     font-size: 15px;
-    font-weight: 400;
     text-align: center;
     padding: 0.50em;
     display: flex;
     justify-content: center;
     border: none;
-    border-radius: 1em;
-    text-transform: uppercase;
-    box-shadow: 2px 1.5px 7.5px rgba(0, 0, 0, 0.4);
     width: 20em;
+    
+    text-transform: uppercase; -webkit-box-shadow: 6px 6px 39px 10px rgba(189,189,189,0.74);
+    -moz-box-shadow: 6px 6px 39px 10px rgba(189,189,189,0.74);
+    box-shadow: 6px 6px 39px 10px rgba(189,189,189,0.74);
+    
 }
 
 .Carrito:hover{
-    color: white;
-    background: #008257;
+    color: rgb(0, 0, 0);
+    background: #f1f1f1;
 }

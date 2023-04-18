@@ -1,0 +1,45 @@
+.OffCanvasBurgerIcon{
+    
+    color: #fffefe; 
+    width: 2em; 
+    height: 3em; 
+    margin-top: 9px;
+
+    @media (min-width: 900px) {
+        margin-top: 0px !important;
+    }
+
+}
+
+.OffCanvasBurgerIcon:hover{
+    transform: scale(1.1);
+}
+
+.svg-inline--fa {
+    vertical-align: none;
+}
+
+
+
+
+
+
+.AllBtn{
+    display: flex;
+    gap: 2em;
+}
+
+.BBN{
+    margin-bottom: 15px;
+
+    @media (min-width: 990px) {
+        margin-bottom: 0px;
+    }
+
+}
+
+.ALLBN{
+    @media (min-width: 990px) {
+        margin-left: 3em;
+    }
+}

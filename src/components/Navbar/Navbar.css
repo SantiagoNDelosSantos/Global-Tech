@@ -1,28 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lobster&family=Montserrat&display=swap');
 
+.GridNavbar{
+    grid-area: GridNavbar;
+}
+
+.GridOffCanvas{
+    grid-area: GridOffCanvas;
+}
+
+.GridLogo{
+    grid-area: GridLogo;
+}
+
+.GridBusqueda{
+
+    grid-area: GridBusqueda;
+    margin: 1em;
+    margin-top: 0.50em;
+
+    @media (min-width: 900px) {
+        margin: 1em;
+        width: 30vw;
+    }
+
+}
+
+.GridCarrito{
+    grid-area: GridCarrito;
+}
+
+.GridNavbar{
+
+    display: grid;
+    grid-template-areas: 
+    "GridOffCanvas GridLogo GridCarrito"
+    "GridBusqueda GridBusqueda GridBusqueda";
+
+    @media (min-width: 900px) {
+        grid-template-areas:
+        "GridOffCanvas GridLogo  GridBusqueda GridCarrito";
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
 .Navbar {
-    display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
-    border-bottom: solid 0.15em black;
+    background-color: rgb(0, 0, 0);
 }
 
 .Logo {
     font-family: "Lobster";
     font-size: 35px;
     font-weight: 400;
-    color: rgb(0, 0, 0);
+    color: white !important;
     margin-left: 25px;
     margin-right: 25px;
     margin-top: 5px;
-    text-decoration: none;
-}
-
-.Logo:hover{
-    color:#004182;
-}
-
-.AllBtn{
-    display: flex;
-    gap: 2em;
+    text-decoration: none; 
 }
