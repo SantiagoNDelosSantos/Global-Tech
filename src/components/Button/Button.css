@@ -1,11 +1,10 @@
 .Botones {
     font-family: 'Lato';
-    color: rgb(255, 255, 255);
-    background-color: #000000;
+    color: rgba(88, 88, 88, 0.781);
+    background-color: #ffffff;
     text-decoration: none;
-    font-size: 17px;
-    font-weight: 400;
-
+    font-size: 1.20em;
+    font-weight: bolder;
     padding: 0.50em;
     display: flex;
     justify-content: center;
@@ -15,22 +14,19 @@
 }
 
 .Botones:hover{
-    color:#b8b8b8;
+    color:#010101;
+    font-weight: bolder;
 }
 
 .Subrayado {
-    background-image: linear-gradient(transparent 0%, transparent 94%, #ffffff 94%, #ffffff 100%);
+    background-image: linear-gradient(transparent 0%, transparent 94%, #000000 94%, #000000 100%);
     background-repeat: no-repeat;
     background-size: 0% 100%;
     background-position-x: right;
     transition: background-size 500ms;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
 }
 
 .Subrayado:hover {
     background-size: 100% 100%;
     background-position-x: left;
-
 }

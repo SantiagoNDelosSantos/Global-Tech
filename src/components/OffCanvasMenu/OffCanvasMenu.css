@@ -19,27 +19,34 @@
     vertical-align: none;
 }
 
+.OffcanvasHeader{
+    background-color: rgb(197, 197, 197);
+    justify-content: space-around !important;
+}
 
+.OffCanvasLogo{
+    font-family: "Lobster";
+    font-size: 2em !important;
+    font-weight: 400;
+    color: rgb(0, 0, 0) !important;
+    margin-top: 5px;
+    text-decoration: none; 
+}
 
-
-
+.OffCanvasLogo:hover{
+    transform: scale(1.05);
+}
 
 .AllBtn{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2em;
 }
 
-.BBN{
-    margin-bottom: 15px;
+.btn-close:focus {
 
-    @media (min-width: 990px) {
-        margin-bottom: 0px;
-    }
-
-}
-
-.ALLBN{
-    @media (min-width: 990px) {
-        margin-left: 3em;
-    }
+    box-shadow: none !important;
+    opacity: 1;
 }
