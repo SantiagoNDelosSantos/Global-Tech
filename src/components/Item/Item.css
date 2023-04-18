@@ -68,7 +68,6 @@
     padding: 0.50em;
     display: flex;
     justify-content: center;
-    border: 0.13em black solid;
     border-radius: 0.50em; 
     text-transform: uppercase; 
     -webkit-box-shadow: 0px 2px 18px 5px rgba(0,0,0,0.18);
@@ -77,6 +76,32 @@
 }
 
 .Info:hover{
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+}
+
+.InfoCarrito{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.CarritoIconItem{
+    color: white;
+    background-color: black;
+    padding: 0.40em;
+    width: 1.40em;
+    height: 1.45em;
+    border-radius: 0.50em; 
+
+    -webkit-box-shadow: 0px 2px 18px 5px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 2px 18px 5px rgba(0,0,0,0.18);
+    box-shadow: 0px 2px 18px 5px rgba(0,0,0,0.18);
+}
+
+.CarritoIconItem:hover{
     color: rgb(0, 0, 0);
     background: #ffffff;
 }
