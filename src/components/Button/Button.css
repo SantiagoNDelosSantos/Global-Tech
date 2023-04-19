@@ -1,4 +1,4 @@
-.Botones {
+.Botone {
     font-family: 'Lato';
     color: rgba(88, 88, 88, 0.781);
     background-color: #ffffff;
@@ -13,12 +13,12 @@
     text-transform: uppercase;
 }
 
-.Botones:hover{
+.Botone:hover{
     color:#010101;
     font-weight: bolder;
 }
 
-.Subrayado {
+.Subra {
     background-image: linear-gradient(transparent 0%, transparent 94%, #000000 94%, #000000 100%);
     background-repeat: no-repeat;
     background-size: 0% 100%;
@@ -26,7 +26,7 @@
     transition: background-size 500ms;
 }
 
-.Subrayado:hover {
+.Subra:hover {
     background-size: 100% 100%;
     background-position-x: left;
 }

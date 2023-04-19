@@ -32,10 +32,11 @@ function App() {
           <Route path='/item/:productId' element={<ItemDetailContainer/>} />
           
         </Routes>
+      
 
         {/*
         
-        <Counter/>
+       <Counter/>
 
         <div>  
           <button onClick={() => setView(`Manzanas`)} className="Botones">Manzanas</button>

@@ -33,13 +33,13 @@ function OffcanvasS() {
 
                 <Offcanvas.Body className="AllBtn">
 
-                        <Link to='/category/Celulares' className="Botones Subrayado">Celulares</Link>
+                    <Link to='/category/Celulares' className="Botones Subrayado">Celulares</Link>
 
-                        <Link to='/category/Tablets' className="Botones Subrayado">Tablets</Link>
+                    <Link to='/category/Tablets' className="Botones Subrayado">Tablets</Link>
 
-                        <Link to='/category/Laptops' className="Botones Subrayado">Laptops</Link>
+                    <Link to='/category/Laptops' className="Botones Subrayado">Laptops</Link>
 
-                        <Link to='/category/Monitores' className="Botones Subrayado">Monitores</Link>
+                    <Link to='/category/Monitores' className="Botones Subrayado">Monitores</Link>
 
                 </Offcanvas.Body>
 

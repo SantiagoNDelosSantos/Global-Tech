@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto:wght@500&display=swap');
 
 .Card{
     display: flex;
@@ -6,11 +6,11 @@
     justify-content:space-evenly;
     align-items:center;
     width: 18em;
-    height: 30em;
     margin: 2em;
-    border-radius: 0.50em; 
-    padding: 0.30em;
+    border-radius: 1em; 
+    padding: 2em;
     background-color: rgba(219, 219, 219, 0.5);
+    gap: 1.5em;
 }
 
 .Card:hover{
@@ -27,8 +27,8 @@
 }
 
 .MarcModels{
-    font-family: 'Roboto';
-    font-size: 1.50em;
+    font-family: 'Playfair';
+    font-size: 2em;
     line-height: 0.50em;
     font-weight:bold;
 }

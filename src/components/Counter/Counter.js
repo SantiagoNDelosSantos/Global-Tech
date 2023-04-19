@@ -7,7 +7,7 @@ const Counter = ({title, min, max}) => {
     const [count, setCount] = useState(min)
 
     const [message, setMessage] = useState(``)
- 
+
     {/*
     
     const increment = () => {
