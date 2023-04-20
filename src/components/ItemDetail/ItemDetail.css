@@ -16,7 +16,11 @@
     width: 80%;
 
     @media (min-width: 900px) {
-        width: 46%;
+        height: 16em;
+        width: 80%;
+        object-fit:scale-down;
+        margin-left: 5%;
+        margin-right: 5%;
     }    
 
 }

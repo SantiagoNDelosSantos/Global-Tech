@@ -6,9 +6,9 @@ const Counter = ({title, min, max}) => {
 
     const [count, setCount] = useState(min)
 
-    const [message, setMessage] = useState(``)
+    const [message, setMessage] = useState('')
 
-    {/*
+    /*
     
     const increment = () => {
         setCount(count + 1)
@@ -22,7 +22,7 @@ const Counter = ({title, min, max}) => {
 
     console.log(count)
 
-    */}
+    */
 
     const dismin = () => {
         setMessage(``)
@@ -43,16 +43,15 @@ const Counter = ({title, min, max}) => {
     }
 
     return(
-            <div className="Contador ModalCounter">
-                <h1>{title}</h1>
-                <h2>{count}</h2>
-                <div className="Contador">
-                    <Button callback={dismin} label={"Disminuir"}/>
-                    <Button callback={increment} label={"Incrementar"}/> 
-                </div>
-                {message !== `` && <p>{message}</p>}
-                
+        <div className="Contador ModalCounter">
+            <h1>{title}</h1>
+            <h2>{count}</h2>
+            <div className="Contador">
+                <Button callback={dismin} label={"Disminuir"}/>
+                <Button callback={increment} label={"Incrementar"}/> 
             </div>
+            {message !== `` && <p>{message}</p>}            
+        </div>
     )
 
 }

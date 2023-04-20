@@ -1,21 +1,30 @@
-import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Form from 'react-bootstrap/Form';
 
-import { Link } from "react-router-dom"
-
+import { Link, NavLink } from "react-router-dom"
+import { useEffect, useState } from 'react';
+import { getCategories } from '../../asyncMock';
 
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faBars, faMobile,} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "./OffCanvasMenu.css"
 
 function OffcanvasS() {
-    const [show, setShow] = useState(false);
 
+    const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const [categories, setCategories] = useState([])
+
+    useEffect(() =>{
+        getCategories()
+            .then(response => {
+                setCategories(response)
+            })
+    }, [])
 
     return (
 
@@ -32,15 +41,14 @@ function OffcanvasS() {
                 </Offcanvas.Header>
 
                 <Offcanvas.Body className="AllBtn">
-
-                    <Link to='/category/Celulares' className="Botones Subrayado">Celulares</Link>
-
-                    <Link to='/category/Tablets' className="Botones Subrayado">Tablets</Link>
-
-                    <Link to='/category/Laptops' className="Botones Subrayado">Laptops</Link>
-
-                    <Link to='/category/Monitores' className="Botones Subrayado">Monitores</Link>
-
+                
+                    {categories.map(cat => {
+                            return(
+                                <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({isActive}) => isActive ? 'ActiveOption Subrayado' : 'Botones Subrayado'}>{cat.description}</NavLink>
+                            )
+                        })
+                    }
+                    
                 </Offcanvas.Body>
 
             </Offcanvas>

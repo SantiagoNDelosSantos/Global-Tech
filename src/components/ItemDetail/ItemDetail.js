@@ -1,10 +1,10 @@
-import './ItemDetail.css'
+import './ItemDetail.css';
 
 const ItemDetail = ({img, marca, modelo, description, color, precio, stock}) => {
 
     return(
 
-        <div className='ItemDetail'>
+        <div className='ItemDetail'>  
 
             <div className='ImgDetalles'>
                 <img className='ImgDetallesImg' src={img} alt={modelo}></img>
@@ -25,11 +25,11 @@ const ItemDetail = ({img, marca, modelo, description, color, precio, stock}) => 
                 <p><strong>Precio:</strong> $ {precio}.</p>
 
             </div>
-                    
+
             <div className='Carrito'>
-               <button className='CarritoBTN'>Agregar al Carrito</button>
+                <button className='CarritoBTN'>Agregar al Carrito</button>
             </div>
- 
+
         </div>
 
     )

@@ -8,7 +8,7 @@ const products = [{
         Memoria Ram: 6GB -
         Cámara: 48MPX.`,
         precio: `484.141`,
-        category: `Celulares`,
+        category: `celular`,
         img: `https://i.ibb.co/1ZpJYSd/iPhone14.png`,
         stock: `5`
     },
@@ -22,7 +22,7 @@ const products = [{
         Memoria Ram: 4GB -
         Cámara: 50MPX.`,
         precio: `74.999`,
-        category: `Celulares`,
+        category: `celular`,
         img: `https://i.ibb.co/wSRYCjr/Galaxy-A13.png`,
         stock: `6`
     },
@@ -36,7 +36,7 @@ const products = [{
         Memoria Ram: 4GB -
         Cámara: 13MPX.`,
         precio: `37.999`,
-        category: `Celulares`,
+        category: `celular`,
         img: `https://i.ibb.co/KLfHyJ3/MotoE20.png`,
         stock: `3`
     },
@@ -52,7 +52,7 @@ const products = [{
         Memoria Ram: 4GB -
         Cámara: 12MPX.`,
         precio: `234.499`,
-        category: `Tablets`,
+        category: `tablet`,
         img: `https://i.ibb.co/4Mf9PCv/i-Pad-10th.png`,
         stock: `3`
     },
@@ -68,7 +68,7 @@ const products = [{
         Memoria Ram: 6GB -
         Cámara: 13MPX.`,
         precio: `243.999`,
-        category: `Tablets`,
+        category: `tablet`,
         img: `https://i.ibb.co/4ZvzZGv/Xiaomi-Pad5.png`,
         stock: `4`
     },
@@ -84,7 +84,7 @@ const products = [{
         Memoria Ram: 4GB -
         Cámara: 12MPX.`,
         precio: `317.499`,
-        category: `Tablets`,
+        category: `tablet`,
         img: `https://i.ibb.co/PWG6swT/i-Pad-10th-RS.png`,
         stock: `2`
     },
@@ -101,7 +101,7 @@ const products = [{
         Almacenamiento: 512GB -
         Memoria Ram: 16GB.`,
         precio: `715.999`,
-        category: `Laptops`,
+        category: `laptop`,
         img: `https://i.ibb.co/R7zjyyx/Asus-Rog-Strix-G15-G513-RM.png`,
         stock: `3`
     },
@@ -118,7 +118,7 @@ const products = [{
         Almacenamiento: 512GB -
         Memoria Ram: 16GB.`,
         precio: `378.099`,
-        category: `Laptops`,
+        category: `laptop`,
         img: `https://i.ibb.co/VNdRQj5/Asus-TUF-FX506-LHB.png`,
         stock: `6`
     },
@@ -135,7 +135,7 @@ const products = [{
         Almacenamiento: 512GB -
         Memoria Ram: 16GB.`,
         precio: `905.000`,
-        category: `Laptops`,
+        category: `laptop`,
         img: `https://i.ibb.co/Y0DDpzJ/Msi-Gl66-11-ugk-001.png`,
         stock: `4`
     },
@@ -151,7 +151,7 @@ const products = [{
         Frecuencia: 240HZ -
         Tiempo de respuesta: 4MS.`,
         precio: `131.599`,
-        category: `Monitores`,
+        category: `monitor`,
         img: `https://i.ibb.co/v14tbj5/Samsung-CRG5.png`,
         stock: `9`
     },
@@ -167,7 +167,7 @@ const products = [{
         Frecuencia: 165HZ -
         Tiempo de respuesta: 4MS.`,
         precio: `110.999`,
-        category: `Monitores`,
+        category: `monitor`,
         img: `https://i.ibb.co/6Pd4v8T/Redragon-Emerald-GM270-F165.png`,
         stock: `7`
     },    
@@ -183,11 +183,26 @@ const products = [{
         Frecuencia: 75HZ -
         Tiempo de respuesta: 5MS.`,
         precio: `68.909`,
-        category: `Monitores`,
+        category: `monitor`,
         img: `https://i.ibb.co/mRQQgtn/Samsung-F27-T350-FHL.png`,
         stock: `4`
     }
 ]
+
+const categories =[
+    {id:'1', description:'Celulares', slug:'celular'},
+    {id:'2', description:'Tablets', slug:'tablet'},
+    {id:'3', description:'Laptops', slug:'laptop'},
+    {id:'4', description:'Monitores', slug:'monitor'}
+]
+
+export const  getCategories = () => {
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(categories)
+        }, 2000)
+    })
+}
 
 export const getProducts = () => {
     return new Promise ((resolve) => {

@@ -1,17 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto:wght@500&display=swap');
+.Card{
+    grid-area: Card;
+}
+
+.ImgCards{
+    grid-area: ImgCards;
+}
+
+.Modelo{
+    grid-area: Modelo;
+}
+.Marca{
+    grid-area: Marca;
+}
+
+.Precio{
+    grid-area: Precio;
+}
+
+.InfoCarrito{
+    grid-area: InfoCarrito;
+}
 
 .Card{
-    display: flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    align-items:center;
+    display: grid;
+    grid-template-areas: 
+    "ImgCards"
+    "Modelo"
+    "Marca"
+    "Precio"
+    "InfoCarrito";
+    gap: 2em;
     width: 18em;
-    margin: 2em;
+    margin: 1.5em;
     border-radius: 1em; 
     padding: 2em;
     background-color: rgba(219, 219, 219, 0.5);
-    gap: 1.5em;
-}
+}   
 
 .Card:hover{
     transform: scale(1.05);
@@ -19,11 +43,11 @@
 }
 
 .ImgCards{
-    width: 12.5em;
-    height:auto; 
-    display:flex; 
-    align-items: center;
-    justify-items: center;
+    height: 15em;
+    width: 90%;
+    object-fit:scale-down;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .MarcModels{
@@ -31,20 +55,9 @@
     font-size: 2em;
     line-height: 0.50em;
     font-weight:bold;
-}
-
-.ModeloMarca{
     display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.MMPrecio{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 1em;
 }
 
 .Precio{
@@ -55,6 +68,12 @@
     background-color:rgb(0, 0, 0);
     border-radius: 5em;
     padding: 0.50em;
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    align-items: center;
 }
 
 .Info{    
@@ -104,4 +123,8 @@
 .CarritoIconItem:hover{
     color: rgb(0, 0, 0);
     background: #ffffff;
+}
+
+h1, h2{
+    margin-bottom: 0px !important;
 }

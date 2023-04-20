@@ -4,12 +4,18 @@ import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import './ItemDetailContainer.css'
 
+import Spinner from 'react-bootstrap/Spinner';
+
+export function BorderExample() {
+    return <Spinner animation="border" />;
+}
 
 const ItemDetailContainer = () => {
+
     const [ product, setProduct] = useState({})
     const [loading, setLoading] = useState(true)
     const {productId} = useParams();
-    console.log(productId)
+
     useEffect(()=>{
         getProductsById(productId)
         .then(response => {
@@ -24,7 +30,12 @@ const ItemDetailContainer = () => {
     },[productId])
 
     if(loading){
-        return <h2 className="Carga">Cargando...</h2>
+        return(
+            <div className='CargaD'>
+                <h1 className='CargandoD'>Cargando...</h1>
+                <BorderExample/>
+            </div>
+        )
     }
     
     return(
@@ -32,5 +43,6 @@ const ItemDetailContainer = () => {
             <ItemDetail {...product} />
         </div>
     )
+
 }
 export default ItemDetailContainer
