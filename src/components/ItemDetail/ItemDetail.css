@@ -116,3 +116,31 @@
     }
 
 }
+
+.FinCompraBTN{
+    font-family: 'Roboto';
+    font-size: 1em;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.10em;
+    border: 0.15em black solid;
+    border-radius: 0.50em; 
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase; 
+    -webkit-box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
+    -moz-box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
+    box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
+    
+}
+
+.FinCompraBTN:hover, .Count1:hover, .Count2:hover{
+    color: rgb(0, 0, 0);
+    background: #f1f1f1;
+}
