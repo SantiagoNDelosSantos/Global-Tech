@@ -1,13 +1,21 @@
 import './ItemDetail.css';
 
+import ItemCount from '../ItemCount/ItemCount';
+
 const ItemDetail = ({img, marca, modelo, description, color, precio, stock}) => {
+
+    const handleOnAdd = (quantity) => {
+        console.log(`Se agregaron ${quantity} ${marca} ${modelo}`)
+    }
 
     return(
 
         <div className='ItemDetail'>  
 
             <div className='ImgDetalles'>
-                <img className='ImgDetallesImg' src={img} alt={modelo}></img>
+
+                <img className="ImgDetallesImg" src={img} alt={modelo}/>
+
             </div>    
 
             <h1 className='DetaMarca'>{marca}</h1>
@@ -27,13 +35,12 @@ const ItemDetail = ({img, marca, modelo, description, color, precio, stock}) => 
             </div>
 
             <div className='Carrito'>
-                <button className='CarritoBTN'>Agregar al Carrito</button>
+                <ItemCount stock={stock} initial={1} onAdd={handleOnAdd}/>
             </div>
 
         </div>
 
     )
-    
 }
 
 export default ItemDetail

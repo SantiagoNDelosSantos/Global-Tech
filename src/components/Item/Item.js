@@ -1,9 +1,6 @@
 import "./Item.css"
 import {Link} from "react-router-dom"
 
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faCartShopping} from "@fortawesome/free-solid-svg-icons";
-
 const Item = ({id, marca, modelo, img, precio}) => { 
 
     return(
@@ -20,10 +17,9 @@ const Item = ({id, marca, modelo, img, precio}) => {
     
             <div className="InfoCarrito">
 
-                <Link to={`/item/${id}`} className="Info"> Info+</Link>
+                <Link to={`/item/${id}`} className="Info"> + Info 
+                </Link>
 
-                <FontAwesomeIcon icon={faCartShopping} className="CarritoIconItem"/>
-            
             </div>
 
         </div>

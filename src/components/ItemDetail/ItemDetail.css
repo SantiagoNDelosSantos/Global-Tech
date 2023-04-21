@@ -55,7 +55,6 @@
     align-items: center;
 }
 
-
 .ItemDetail{
 
     display: grid;
@@ -83,7 +82,7 @@
 }
 
 .DetaMarca, .DetaModelo, .Description, .Detalles, .Carrito, p{
-    font-size: 1.2em;  
+    font-size: 1.1em;  
     font-family: 'Roboto';
     text-align: center;
     margin-bottom: 0 !important;
@@ -104,43 +103,13 @@
 
 }
 
-.CarritoBTN{
-
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    background-color:rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 0.40em;
-    border: 0.15em black solid;
-    border-radius: 0.50em; 
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    text-transform: uppercase; 
-    -webkit-box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
-    -moz-box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
-    box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
-    
-    @media (min-width: 900px) {
-        width: 50%;
-        margin: 0%;
-
-    }
-
-}
-
-.CarritoBTN:hover{
-    color: rgb(0, 0, 0);
-    background: #f1f1f1;
-}
-
 .Detalles{
 
     display: flex;
     flex-direction: column;
 
     @media (min-width: 900px) {
-    flex-direction: row;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
     gap: 1em;
