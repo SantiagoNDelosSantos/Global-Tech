@@ -3,15 +3,20 @@ import ItemCount from '../ItemCount/ItemCount';
 import { useCart } from '../../context/CartContext'
 import { Link } from 'react-router-dom';
 
+import { useNotification } from '../../notification/NotificationService';
+
 const ItemDetail = ({id, img, marca, modelo, description, color, precio, stock}) => {
 
     const {addItem, isInCart} = useCart()
+
+    const {setNotification} = useNotification()
 
     const handleOnAdd = (quantity) => {
         const productToAdd ={
             id, marca, modelo, precio, quantity 
         }
         addItem(productToAdd)
+        setNotification('success', `Se agrego correctamente ${quantity} ${modelo}`)
     }
 
     return(
@@ -20,7 +25,13 @@ const ItemDetail = ({id, img, marca, modelo, description, color, precio, stock})
 
             <div className='ImgDetalles'>
 
-                <img className="ImgDetallesImg" src={img} alt={modelo}/>
+                <div>
+                    <img className="ImgDetallesImg IMG1" src={img} alt={modelo}/>
+                </div>
+                
+                <div>
+                    <img className="ImgDetallesImg IMG2" src={img} alt={modelo}/>
+                </div>
 
             </div>    
 
@@ -28,7 +39,9 @@ const ItemDetail = ({id, img, marca, modelo, description, color, precio, stock})
 
             <h2 className='DetaModelo'>{modelo}</h2>
 
-            <p className='Description'><strong>Especificaciones:</strong> {description}</p>
+            <div className='Description'>
+                <p><strong>Especificaciones: </strong>  {description}</p>
+            </div>
 
             <div className='Detalles'>
                     

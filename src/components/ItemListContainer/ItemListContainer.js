@@ -19,11 +19,11 @@ const ItemListContainer = ({greeting}) => {
     const {categoryId} = useParams()
 
     useEffect(() => {
+        
+        setLoading(true)
 
         const asyncFunction = categoryId ? getProductsByCategory : getProducts
     
-        setLoading(true)
-
         asyncFunction(categoryId) 
             .then(response => {
                 setProducts(response)

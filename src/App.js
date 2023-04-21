@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from  './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './context/CartContext';
+import { NotificationProvider } from './notification/NotificationService';
 
 const App = () => {
 
@@ -13,25 +14,29 @@ const App = () => {
 
         <BrowserRouter>
 
-          <CartProvider>
+          <NotificationProvider>
 
-            <Navbar/>
+            <CartProvider>
 
-            <Routes>
+              <Navbar/>
 
-              <Route path='/' element={<ItemListContainer greeting={'Bienvenid@ a GlobalTech.'}/>}/>
+              <Routes>
 
-              <Route path='/category/:categoryId' element={<ItemListContainer greeting={"Productos filtrados."}/>}/>
-              
-              <Route path='/item/:productId' element={<ItemDetailContainer/>} />
+                <Route path='/' element={<ItemListContainer greeting={'Bienvenid@ a GlobalTech.'}/>}/>
 
-              <Route path='/cart' element={<h1>CART</h1>}/> 
+                <Route path='/category/:categoryId' element={<ItemListContainer greeting={"Productos filtrados."}/>}/>
+                
+                <Route path='/item/:productId' element={<ItemDetailContainer/>} />
 
-              <Route path='/checkout' element={<h2>checkout</h2>}/>
+                <Route path='/cart' element={<h1>CART</h1>}/> 
 
-            </Routes>
+                <Route path='/checkout' element={<h2>checkout</h2>}/>
 
-          </CartProvider>
+              </Routes>
+
+            </CartProvider>
+          
+            </NotificationProvider>
 
         </BrowserRouter>
 

@@ -2,6 +2,8 @@
 
 .ItemDetail{
     grid-area: ItemDetail;
+    border: 0.20em rgb(219, 219, 219) solid;
+    border-radius: 1em;
 }
 
 .ImgDetalles{
@@ -25,6 +27,34 @@
 
 }
 
+.IMG1{
+    grid-area: IMG1;
+}
+
+.IMG2{
+    grid-area: IMG2;
+}
+
+.ImgDetalles{
+    display: grid;
+    grid-template-areas: 
+    "IMG1"
+    "IMG2";
+
+    @media (min-width: 900px) {
+        grid-template-areas: 
+        "IMG1 IMG2";
+    }  
+
+}
+
+.DetaMarca, .DetaModelo, .Description, .Detalles, .Carrito, p{
+    font-size: 1.1em;  
+    font-family: 'Roboto';
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
 .DetaMarca{
     grid-area: DetaMarca;
 }
@@ -38,8 +68,7 @@
     grid-area: Description;
     
     @media (min-width: 900px) {
-        padding: 1em;
-        padding-bottom: 0em;
+        padding: 0em;
     }
 
 }
@@ -78,14 +107,12 @@
 }
 
 .ItemDetail{
-    padding: 2em;
-}
 
-.DetaMarca, .DetaModelo, .Description, .Detalles, .Carrito, p{
-    font-size: 1.1em;  
-    font-family: 'Roboto';
-    text-align: center;
-    margin-bottom: 0 !important;
+    padding: 2em;
+
+    @media (min-width: 900px) {
+        padding: 1em;
+    }
 }
 
 .DetaMarca, .DetaModelo{
