@@ -24,11 +24,11 @@
 .Card{
     display: grid;
     grid-template-areas: 
-    "ImgCards"
-    "Modelo"
-    "Marca"
-    "Precio"
-    "InfoCarrito";
+    "ImgCards ImgCards"
+    "Modelo   Modelo"
+    "Marca    Marca"
+    "Precio   InfoCarrito"
+    ;
     gap: 2em;
     width: 18em;
     margin: 1.5em;
@@ -68,10 +68,6 @@
     background-color:rgb(0, 0, 0);
     border-radius: 5em;
     padding: 0.50em;
-    display: flex;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
     justify-content: center;
     align-items: center;
 }
@@ -100,9 +96,6 @@
 }
 
 .InfoCarrito{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
     justify-content: center;
     align-items: center;
 }
