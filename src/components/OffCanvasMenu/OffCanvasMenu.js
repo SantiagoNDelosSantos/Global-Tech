@@ -3,7 +3,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import { Link, NavLink } from "react-router-dom"
 import { useEffect, useState } from 'react';
-import { getCategories } from '../../asyncMock';
+import { collection, getDocs, query, orderBy} from 'firebase/firestore';
+import { db } from "../../services/firebase/firebaseConfig"
 
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -19,11 +20,20 @@ function OffcanvasS() {
     const [categories, setCategories] = useState([])
 
     useEffect(() =>{
-        getCategories()
-            .then(response => {
-                setCategories(response)
+
+        const categoriesRef = query(collection(db, 'categories'), orderBy('order'))
+
+        getDocs(categoriesRef)
+            .then(snapshot =>{
+                const categoriesAdapted = snapshot.docs.map(doc =>{
+                    const data = doc.data()
+                    return{id: doc.id,...data}
+                })
+                setCategories(categoriesAdapted)
             })
     }, [])
+
+    console.log(categories)
 
     return (
 
@@ -43,7 +53,7 @@ function OffcanvasS() {
                 
                     {categories.map(cat => {
                             return(
-                                <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({isActive}) => isActive ? 'ActiveOption Subrayado' : 'Botones Subrayado'}>{cat.description}</NavLink>
+                                <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({isActive}) => isActive ? 'ActiveOption Subrayado' : 'Botones Subrayado'}>{cat.label}</NavLink>
                             )
                         })
                     }

@@ -6,12 +6,15 @@ import { useState } from "react"
 import { useNotification } from "../../notification/NotificationService"
 import Spinner from 'react-bootstrap/Spinner';
 import './Checkout.css';
+import ContacForm from "../ContactForm/ContacForm"
 
 export function BorderExample() {
     return <Spinner animation="border" />;
 }
 
 const Checkout = () => {
+
+
 
     const [orderId, setOrderId] = useState('')
 
@@ -28,11 +31,7 @@ const Checkout = () => {
             setLoading(true)
 
             const objOrder = {
-                buyer:{
-                    nombre: 'Cliente Genérico',
-                    phone: '1234 456789',
-                    email: 'cliente@gmail.com',
-                },
+                buyer: userData,
                 items: cart,
                 total
             }
@@ -110,7 +109,7 @@ const Checkout = () => {
         <div>
             <h1>Checkout</h1>
             <h2>Ingrese sus datos</h2>
-            <button onClick= {createOrder}>Crear Orden</button>
+            <ContacForm onConfirm={createOrder}/>
         </div>
     )
 }
