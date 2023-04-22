@@ -1,0 +1,12 @@
+.Carga{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin-top: 30Vh !important;
+}
+
+.Cargando{
+    font-family: 'Montserrat';
+}

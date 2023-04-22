@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { useNotification } from '../../notification/NotificationService';
 
-const ItemDetail = ({id, img, marca, modelo, description, color, precio, stock}) => {
+const ItemDetail = ({id, img, img2, marca, modelo, description, color, precio, stock}) => {
 
     const {addItem, isInCart} = useCart()
 
@@ -16,7 +16,7 @@ const ItemDetail = ({id, img, marca, modelo, description, color, precio, stock})
             id, marca, modelo, precio, quantity 
         }
         addItem(productToAdd)
-        setNotification('success', `Se agrego correctamente ${quantity} ${modelo}`)
+        setNotification('success', `Se agrego correctamente ${quantity} Und. de ${marca} ${modelo}`)
     }
 
     return(
@@ -30,7 +30,7 @@ const ItemDetail = ({id, img, marca, modelo, description, color, precio, stock})
                 </div>
                 
                 <div>
-                    <img className="ImgDetallesImg IMG2" src={img} alt={modelo}/>
+                    <img className="ImgDetallesImg IMG2" src={img2} alt={modelo}/>
                 </div>
 
             </div>    

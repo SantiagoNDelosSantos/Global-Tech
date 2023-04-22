@@ -5,6 +5,8 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from  './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './context/CartContext';
 import { NotificationProvider } from './notification/NotificationService';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
 
 const App = () => {
 
@@ -28,9 +30,9 @@ const App = () => {
                 
                 <Route path='/item/:productId' element={<ItemDetailContainer/>} />
 
-                <Route path='/cart' element={<h1>CART</h1>}/> 
+                <Route path='/cart' element={<Cart/>}/> 
 
-                <Route path='/checkout' element={<h2>checkout</h2>}/>
+                <Route path='/checkout' element={<Checkout/>}/>
 
               </Routes>
 

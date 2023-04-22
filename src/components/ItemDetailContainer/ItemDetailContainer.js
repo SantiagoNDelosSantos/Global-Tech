@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react"
-import { getProductsById } from "../../asyncMock"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import './ItemDetailContainer.css'
 
 import Spinner from 'react-bootstrap/Spinner';
+
+import { getDoc, doc } from 'firebase/firestore'
+import { db } from '../../services/firebase/firebaseConfig'
 
 export function BorderExample() {
     return <Spinner animation="border" />;
@@ -12,22 +14,31 @@ export function BorderExample() {
 
 const ItemDetailContainer = () => {
 
-    const [ product, setProduct] = useState({})
+    const [ product, setProduct] = useState()
     const [loading, setLoading] = useState(true)
+
     const {productId} = useParams();
 
     useEffect(()=>{
-        getProductsById(productId)
-        .then(response => {
-            setProduct(response)
-        })
-        .catch(err => {
-            console.log(err)
-        })  
-        .finally(()=>{
-            setLoading(false)
-        })
-    },[productId])
+
+        setLoading(true)
+        
+        const productRef = doc(db, 'products', productId)
+
+        getDoc(productRef)
+            .then(snapshot => {
+                const data = snapshot.data()
+                const productAdapted = {id: snapshot.id, ...data}
+                setProduct(productAdapted)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            .finally(() =>{
+                setLoading(false)
+            })
+
+    }, [productId])
 
     if(loading){
         return(

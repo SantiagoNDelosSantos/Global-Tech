@@ -4,14 +4,15 @@ const Notification = ({type, message}) => {
 
     const notificationStyle = {
         position:'absolute',
-        top:80,
-        right: 50,
+        zIndex: 11, 
+        top: '8em',
+        right: '1em',
         backgroundColor: 'black',
-        border: type === 'success' ? '0.2em green solid' : '0.2em red solid',
+        border: type === 'success' ? '0.2em green solid' : '0.2em #cb0000 solid',
         color: 'white',
-        padding: '1em',
+        padding: '0.6em',
         borderRadius: 20,
-        textTransform: 'upperCase'
+        fontFamily: 'Montserrat',
     }
 
     if(!message) return
