@@ -4,7 +4,7 @@ import "./Cart.css"
 
 const Cart = () => {
 
-    const {cart, total} = useCart()
+    const {cart, total, incrementQuantity, disminQuantity} = useCart()
 
     return(
 
@@ -20,7 +20,10 @@ const Cart = () => {
                                 <h2>{prod.marca} - {prod.modelo}</h2>
                                 <h2>Cantidad: {prod.quantity}</h2>
                                 <h2>$ {prod.precio} x Und.</h2>
-                                
+                                <h2>{prod.stock}</h2>
+                                <button onClick={() => disminQuantity(prod.id)}>-</button>
+                                <button onClick={() => incrementQuantity(prod.id, prod.stock)}>+</button>
+
                             </div>
                         )
                     })

@@ -1,23 +1,24 @@
 import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
 import { useCart } from '../../context/CartContext'
-import { Link } from 'react-router-dom';
 
 import { useNotification } from '../../notification/NotificationService';
 
 const ItemDetail = ({id, img, img2, marca, modelo, description, color, precio, stock}) => {
 
-    const {addItem, isInCart} = useCart()
+    const {addItem, isInCart, getProductQuantity} = useCart()
 
     const {setNotification} = useNotification()
 
     const handleOnAdd = (quantity) => {
         const productToAdd ={
-            id, marca, modelo, precio, quantity 
+            id, marca, modelo, precio, quantity, stock, 
         }
         addItem(productToAdd)
         setNotification('success', `Se agrego correctamente ${quantity} Und. de ${marca} ${modelo}`)
     }
+
+    const productQuantity = getProductQuantity(id)
 
     return(
 
@@ -55,15 +56,8 @@ const ItemDetail = ({id, img, img2, marca, modelo, description, color, precio, s
 
             <div className='Carrito'>
 
-                { 
-                    isInCart(id) ? (
-                        <Link to='/cart' className='FinCompraBTN'>Terminar compra</Link>
-                    ) :(
-                        <ItemCount stock={stock} initial={1} onAdd={handleOnAdd}/>
-                    )
-                }
+                        <ItemCount stock={stock} initial={productQuantity || 1} onAdd={handleOnAdd}/>
 
-                
             </div>
 
         </div>

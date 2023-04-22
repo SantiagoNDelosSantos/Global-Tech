@@ -5,13 +5,23 @@ const CartContext = createContext('valor inicial')
 export const CartProvider = ({children}) => {
     
     const [cart, setCart] = useState([])
-    console.log(cart)
 
     const addItem = (productToAdd) => {
-        if(!isInCart(productToAdd.id)){
+        if(!isInCart(productToAdd.id)) {
             setCart(prev => [...prev, productToAdd])
-        }else{
-            console.log('El producto ya esta en carrito, no puede volver a agregarlo')
+        } else {
+            const cartUpdated = cart.map(prod =>{
+                if(prod.id === productToAdd.id){
+                    const productUpdated = {
+                        ...prod,
+                        quantity: productToAdd.quantity
+                    }
+                    return productUpdated
+                }else {
+                    return prod
+                }
+            })
+            setCart(cartUpdated) 
         }
     }
 
@@ -53,8 +63,51 @@ export const CartProvider = ({children}) => {
         setCart([ ])
     }
 
+    const getProductQuantity = (id) => {
+        const productAdded = cart.find(prod => prod.id === id)
+        const quantity = productAdded?.quantity || 0
+
+        return quantity
+    } 
+
+    const incrementQuantity = (id, stock) => {
+
+        const cartUpdated = cart.map(prod =>{
+
+            if(prod.id === id){
+                const productUpdated = {
+                    ...prod,
+                    quantity: prod.quantity < stock ? prod.quantity + 1 : prod.quantity
+                }
+                return productUpdated
+            } else {
+                return prod
+            }
+        })
+        setCart(cartUpdated) 
+
+    }
+
+    const disminQuantity = (id) => {
+
+        const cartUpdated = cart.map(prod =>{
+
+            if(prod.id === id){
+                const productUpdated = {
+                    ...prod,
+                    quantity: prod.quantity > 1 ? prod.quantity - 1 : prod.quantity
+                }
+                return productUpdated
+            } else {
+                return prod
+            }
+        })
+        setCart(cartUpdated) 
+
+    }
+
     return (
-        <CartContext.Provider value={{cart, addItem, totalQuantity, removeItem, isInCart, total, clearCart}}>
+        <CartContext.Provider value={{cart, addItem, totalQuantity, removeItem, isInCart, total, clearCart, getProductQuantity, incrementQuantity, disminQuantity}}>
             {children}
         </CartContext.Provider>
     )
