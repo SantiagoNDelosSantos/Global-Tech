@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import OffcanvasS from "../OffCanvasMenu/OffCanvasMenu"
 import Buscador from "../Buscador/Buscador"
 import CarWidget from "../CartWidget/CartWidget"
-import Cart from "../Cart/Cart"
 
 const Navbar = () => {
     return(
