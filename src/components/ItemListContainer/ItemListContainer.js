@@ -7,8 +7,7 @@ import { useParams } from 'react-router-dom';
 
 import Spinner from 'react-bootstrap/Spinner';
 
-import { getDocs, collection, query, where} from 'firebase/firestore';
-import { db } from '../../services/firebase/firebaseConfig';
+import { getProducts } from '../../services/firebase/firestore/products';
 
 export function BorderExample() {
     return <Spinner animation="border" />;
@@ -25,24 +24,16 @@ const ItemListContainer = ({greeting}) => {
         
         setLoading(true)
 
-        const productsRef = categoryId ? query(collection(db, 'products'), where('category', '==', categoryId)) : collection(db, 'products') 
-
-        getDocs(productsRef)
-            .then(snapshot =>{
-                console.log(snapshot)
-                const productsAdapted = snapshot.docs.map(doc =>{
-                const data = doc.data()
-                    return{id: doc.id, ...data}
-                })
-                setProducts(productsAdapted)
+        getProducts(categoryId)
+            .then(products =>{
+                setProducts(products)
             })
-            .catch(error => {
+            .catch(error =>{
                 console.log(error)
             })
             .finally(() => {
                 setLoading(false)
             })
-
 
     }, [categoryId])
 

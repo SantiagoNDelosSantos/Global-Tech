@@ -8,6 +8,8 @@ import Spinner from 'react-bootstrap/Spinner';
 import { getDoc, doc } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
 
+import {createAdaptedProductFromFirestore} from '../../adapters/createAdaptedProductFromFirestore'
+
 export function BorderExample() {
     return <Spinner animation="border" />;
 }
@@ -27,8 +29,7 @@ const ItemDetailContainer = () => {
 
         getDoc(productRef)
             .then(snapshot => {
-                const data = snapshot.data()
-                const productAdapted = {id: snapshot.id, ...data}
+                const productAdapted = createAdaptedProductFromFirestore(snapshot)
                 setProduct(productAdapted)
             })
             .catch(error => {

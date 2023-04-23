@@ -1,20 +1,17 @@
 import { useCart } from "../../context/CartContext"
-import Cart from "../Cart/Cart"
 import { db } from "../../services/firebase/firebaseConfig"
 import { collection, query, where, documentId, getDocs, writeBatch, addDoc} from "firebase/firestore"
 import { useState } from "react"
 import { useNotification } from "../../notification/NotificationService"
 import Spinner from 'react-bootstrap/Spinner';
 import './Checkout.css';
-import ContacForm from "../ContactForm/ContacForm"
+import ContacForm from "../ContactForm/ContactForm"
 
 export function BorderExample() {
     return <Spinner animation="border" />;
 }
 
 const Checkout = () => {
-
-
 
     const [orderId, setOrderId] = useState('')
 
@@ -107,8 +104,6 @@ const Checkout = () => {
 
     return(
         <div>
-            <h1>Checkout</h1>
-            <h2>Ingrese sus datos</h2>
             <ContacForm onConfirm={createOrder}/>
         </div>
     )

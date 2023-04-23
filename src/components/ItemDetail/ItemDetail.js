@@ -6,7 +6,7 @@ import { useNotification } from '../../notification/NotificationService';
 
 const ItemDetail = ({id, img, img2, marca, modelo, description, color, precio, stock}) => {
 
-    const {addItem, isInCart, getProductQuantity} = useCart()
+    const {addItem, getProductQuantity} = useCart()
 
     const {setNotification} = useNotification()
 

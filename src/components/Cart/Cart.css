@@ -1,3 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto:wght@500&display=swap');
+
+.CartView{
+    grid-area: CartView;
+}
+
+.CartView{
+    display: grid;
+}
+
+.FoCart{
+    grid-area: FoCart;
+}
+
+.VaciarCart{
+    grid-area: VaciarCart;
+}
+
+.TotalCart{
+    grid-area: TotalCart;
+}
+.GenerarOrden1{
+    grid-area: GenerarOrden1;
+}
+
+.FoCart{
+
+    display: grid;
+    grid-template-areas: 
+    "VaciarCart"
+    "TotalCart"
+    "GenerarOrden1";
+
+    @media (min-width: 900px) {
+        grid-template-areas:
+        "VaciarCart TotalCart GenerarOrden1";
+        margin: 3em;
+        align-items: center;
+    }
+
+}
+
+.VaciarCart{
+    grid-area: VaciarCart;
+}
+
+.VaciarCart, .GenerarOrden1{
+
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color:rgb(0, 0, 0);
+    text-decoration: none;
+    border: 0.14em black solid;
+    border-radius: 0.5em; 
+    text-transform: uppercase; 
+    -webkit-box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0.1em;   
+    
+    @media (min-width: 900px) {
+        width: 100%;
+        height: 70%;
+        margin-top: 15%
+    }
+}
+
+.GenerarOrden1{
+
+    margin-bottom: 5vh;
+
+    @media (min-width: 900px) {
+        margin: 0%;
+        padding: 0%;
+    }
+
+}
+
+.VaciarCart:hover, .GenerarOrden1:hover{
+    background: white;
+    color: black;
+}
+
+.VaciarCart{
+    margin-top: 1vh;
+    @media (min-width: 900px) {
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+.TitleCart{
+
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    padding: 2em;
+
+    @media (min-width: 900px) {
+        padding: 1.5em;
+        font-size:2em
+    }
+
+}
+
+.InfoProductsCart{
+    grid-area: InfoProductsCart;
+}
+
+.Info1{
+    grid-area: Info1;    
+}
+
+
+.Info2{
+    grid-area: Info2;
+}
+
+.Info3{
+    grid-area: Info3;
+}
+
+.CountEnCarrito{
+    grid-area: CountEnCarrito;
+}
+
+.InfoMenos{
+    grid-area: InfoMenos;
+}
+
+.Info4{
+    grid-area: Info4;
+}
+
+.InfoMas{
+    grid-area: InfoMas;
+}
+
+.CountEnCarrito{
+
+    display: grid;
+    grid-template-areas: 
+    "InfoMenos Info4 InfoMas";
+    align-items: center;
+
+    @media (min-width: 900px) {
+        margin: 0;
+        display: flex; 
+        
+    }
+
+}
+
+.EliminarItemCart{
+    grid-area: EliminarItemCart;
+}
+
+.InfoProductsCart{
+
+    display: grid;
+    grid-template-areas:
+    "Info1    EliminarItemCart"
+    "Info2          Info2"
+    "Info3          Info3"            
+    "CountEnCarrito CountEnCarrito"
+    ;
+    padding: 1em;
+    background:rgba(219, 219, 219, 0.5);
+    border-radius: 1em;
+    gap: 1em;
+    margin: 1em;
+    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 900px) {
+        grid-template-areas:
+        "Info1 Info2 Info3  CountEnCarrito EliminarItemCart";
+        justify-content: space-around;
+        gap: 0em;
+        margin: 3em;
+    }
+
+}
+
+.Info1{
+    font-family: 'Playfair';    
+    font-size: 1.6em;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.Info2, .Info3, .Info4{
+    font-size: 1.4em;
+    font-family: 'Lato';
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .CarritoView{
     border: 1em black solid;
+}
+
+.Count1Cart, .Count2Cart{
+    font-size: 1.6em;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color:rgb(0, 0, 0);
+    text-decoration: none;
+    border: 0.13em black solid;
+    border-radius: 0.5em; 
+    text-transform: uppercase; 
+    -webkit-box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.1em;   
+    padding-bottom: 0.2em;
+
+    @media (min-width: 900px) {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+.Count1Cart:hover, .Count2Cart:hover{
+    background: white;
+    color: black;
+}
+
+.ContadorCart{
+    font-size: 2em;
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 0.1em;
+
+    @media (min-width: 900px) {
+        margin: 0em 1em;
+    }
+}
+
+.EliminarItemCarritoIcon{
+    
+    color: #ffffff; 
+    width: 1.5em; 
+    height: 1.5em; 
+    background-color:rgb(0, 0, 0);
+    padding: 0.5em;
+    border: 0.5em black solid;
+    border-radius: 0.50em; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase; 
+    -webkit-box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
+    -moz-box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
+    box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);    
+
+}    
+
+.EliminarItemCarritoIcon:hover{
+    color: black;
+    background: white;
+}
+
+.ContenedorItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TotalCart{
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    padding: 1em;
+
+    @media (min-width: 900px) {
+        padding: 0.5em;
+        font-size:2em
+    }
+
+}
+
+.CartView{
+    display: grid;
+    grid-template-areas: 
+    "TitleCart"
+    "InofProductsCart"
+    "FoCart";
 }
