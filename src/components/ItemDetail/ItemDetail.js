@@ -1,16 +1,15 @@
 import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
 import { useCart } from '../../context/CartContext'
-
 import { useNotification } from '../../notification/NotificationService';
 
 const ItemDetail = ({id, img, img2, marca, modelo, description, color, precio, stock}) => {
 
     const {addItem, getProductQuantity} = useCart()
-
     const {setNotification} = useNotification()
 
     const handleOnAdd = (quantity) => {
+
         const productToAdd ={
             id, marca, modelo, precio, quantity, stock, 
         }

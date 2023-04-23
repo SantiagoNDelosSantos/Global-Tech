@@ -10,11 +10,12 @@ const ContacForm = ({onConfirm}) => {
     const[domicilio, setDomicilio] = useState('')
     
     const handleSubmit = () => {
+
         const userData = {
             name, phone, gmail, provincia, domicilio
         }
-
         onConfirm(userData)
+
     }
 
     return (
@@ -29,11 +30,12 @@ const ContacForm = ({onConfirm}) => {
 
                 <div className="InputsForm">
 
-                    <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nombre" required className="Formu Formu1"></input>
+                    <input value={name} onChange={(e) => setName(e.target.value)}  placeholder="Nombre" required className="Formu Formu1" pattern="[A-Za-z ]+" />
 
-                    <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Celular" required className="Formu Formu2"></input>
-                    
-                    <input value={gmail} onChange={(e) => setGmail(e.target.value)} placeholder="Correo" required className="Formu Formu3"></input>
+                    <input value={phone} onChange={(e) => setPhone(e.target.value)}  placeholder="Celular" required className="Formu Formu2" pattern="[0-9]+"/>
+                        
+                    <input value={gmail} onChange={(e) => setGmail(e.target.value)}  placeholder="Correo" required className="Formu Formu3" type="email"/>
+
                     
                     <input value={provincia} onChange={(e) => setProvincia(e.target.value)} placeholder="Provincia" required className="Formu Formu4"></input>
                     

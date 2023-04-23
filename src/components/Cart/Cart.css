@@ -61,7 +61,6 @@
     justify-content: center;
     align-items: center;
     width: 70%;
-
     margin-left: 15%;
     margin-right: 15%;
     padding: 0.1em;   
@@ -71,6 +70,7 @@
         height: 70%;
         margin-top: 15%
     }
+
 }
 
 .GenerarOrden1{
@@ -90,11 +90,14 @@
 }
 
 .VaciarCart{
+
     margin-top: 1vh;
+
     @media (min-width: 900px) {
         margin: 0%;
         padding: 0%;
     }
+
 }
 
 .TitleCart{
@@ -218,6 +221,7 @@
 }
 
 .Count1Cart, .Count2Cart{
+
     font-size: 1.6em;
     color: rgb(255, 255, 255);
     font-weight: bolder;
@@ -243,6 +247,7 @@
         margin-left: 0%;
         margin-right: 0%;
     }
+
 }
 
 .Count1Cart:hover, .Count2Cart:hover{
@@ -251,6 +256,7 @@
 }
 
 .ContadorCart{
+
     font-size: 2em;
     background-color: white;
     border-radius: 0.5em;
@@ -259,10 +265,10 @@
     @media (min-width: 900px) {
         margin: 0em 1em;
     }
+
 }
 
 .EliminarItemCarritoIcon{
-    
     color: #ffffff; 
     width: 1.5em; 
     height: 1.5em; 
@@ -277,7 +283,6 @@
     -webkit-box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
     -moz-box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);
     box-shadow: 5px 5px 30px 8px rgba(189,189,189,0.74);    
-
 }    
 
 .EliminarItemCarritoIcon:hover{
@@ -292,6 +297,7 @@
 }
 
 .TotalCart{
+    
     font-family: 'Montserrat';
     font-weight: bolder;
     padding: 1em;

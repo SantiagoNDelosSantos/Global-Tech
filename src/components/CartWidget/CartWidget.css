@@ -3,7 +3,7 @@
     color: #ffffff; 
     width: 2em; 
     height: 3em; 
-    margin-top: 9px;
+    margin-top: 6px;
 
     @media (min-width: 900px) {
         margin-top: 0px !important;
@@ -27,6 +27,7 @@
 }
 
 .UndCarrito{
+    
     margin-top: 8px;
     color: white;
     margin-bottom: 0rem;
@@ -34,4 +35,5 @@
     @media (min-width: 900px) {
         margin-top: -5px;
     }
+
 }

@@ -12,18 +12,6 @@
     grid-area: GridLogo;
 }
 
-.GridBusqueda{
-
-    grid-area: GridBusqueda;
-    margin: 1em;
-    margin-top: 0.50em;
-
-    @media (min-width: 900px) {
-        margin: 1em;
-        width: 30vw;
-    }
-
-}
 
 .GridCarrito{
     grid-area: GridCarrito;
@@ -33,12 +21,13 @@
 
     display: grid;
     grid-template-areas: 
-    "GridOffCanvas GridLogo GridCarrito"
-    "GridBusqueda GridBusqueda GridBusqueda";
+    "GridOffCanvas GridLogo GridCarrito";
+    padding-left: 0.8em;
+    padding-right: 0.7em;
 
     @media (min-width: 900px) {
         grid-template-areas:
-        "GridOffCanvas GridLogo  GridBusqueda GridCarrito";
+        "GridOffCanvas GridLogo GridCarrito";
         justify-content: space-around;
         align-items: center;
     }
@@ -61,6 +50,7 @@
     color: white !important;
     margin-left: 25px;
     margin-right: 25px;
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 5px;
     text-decoration: none; 
 }

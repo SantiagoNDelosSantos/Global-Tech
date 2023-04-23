@@ -1,14 +1,10 @@
-
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
 import { Link, NavLink } from "react-router-dom"
 import { useEffect, useState } from 'react';
 import { collection, getDocs, query, orderBy} from 'firebase/firestore';
 import { db } from "../../services/firebase/firebaseConfig"
-
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
 import "./OffCanvasMenu.css"
 
 function OffcanvasS() {

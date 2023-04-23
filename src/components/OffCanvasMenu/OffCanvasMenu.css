@@ -3,11 +3,8 @@
     color: #fffefe; 
     width: 2em; 
     height: 3em; 
-    margin-top: 9px;
+    margin-top: 6px;
 
-    @media (min-width: 900px) {
-        margin-top: 0px !important;
-    }
 
 }
 

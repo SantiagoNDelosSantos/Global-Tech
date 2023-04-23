@@ -2,12 +2,9 @@ import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import './ItemDetailContainer.css'
-
 import Spinner from 'react-bootstrap/Spinner';
-
 import { getDoc, doc } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
-
 import {createAdaptedProductFromFirestore} from '../../adapters/createAdaptedProductFromFirestore'
 
 export function BorderExample() {
@@ -18,7 +15,6 @@ const ItemDetailContainer = () => {
 
     const [ product, setProduct] = useState()
     const [loading, setLoading] = useState(true)
-
     const {productId} = useParams();
 
     useEffect(()=>{

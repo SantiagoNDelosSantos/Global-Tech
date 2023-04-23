@@ -14,11 +14,8 @@ export function BorderExample() {
 const Checkout = () => {
 
     const [orderId, setOrderId] = useState('')
-
     const [loading, setLoading] = useState(false) 
-
     const {cart, total, clearCart} = useCart()
-
     const {setNotification} = useNotification()
 
     const createOrder = async (userData) => {
@@ -34,16 +31,13 @@ const Checkout = () => {
             }
     
             const ids = cart.map(prod => prod.id)
-    
             const productsRef = query(collection(db, 'products'), where(documentId(), 'in', ids))
-    
             const {docs} = await getDocs(productsRef)
-    
             const bacth = writeBatch(db)
-    
             const outOfStock = []
     
             docs.forEach(doc => {
+
                 const dataDoc = doc.data()
                 const stockDb = dataDoc.stock
                 const productAddedToCart = cart.find(prod => prod.id === doc.id)
@@ -51,7 +45,8 @@ const Checkout = () => {
     
                 if(stockDb >= productQuantity){
                     bacth.update(doc.ref, {stock: stockDb - productQuantity})
-                } else {
+                } 
+                else {
                     outOfStock.push({ id: doc.id, ...dataDoc})
                 }
             })
@@ -60,7 +55,6 @@ const Checkout = () => {
                 bacth.commit()
                 
                 const ordersRef = collection(db, 'orders')
-    
                 const orderAdded = await addDoc(ordersRef, objOrder)
 
                 clearCart()
@@ -69,7 +63,7 @@ const Checkout = () => {
     
             }
             else{
-                setNotification('error', 'Hay productos que no tienen stock.')
+                setNotification('error', 'Verifique el Stock de los productos que tiene en su carrito.')
             }
             
         } catch (error) {

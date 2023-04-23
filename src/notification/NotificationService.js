@@ -37,7 +37,7 @@ export const NotificationProvider = ({children}) => {
     const setNotification = (type, text) => {
         setNotificationData({type,text})
         setTimeout(() => {
-            setNotification({ type, text:''})
+            setNotificationData({ type, text:''})
         }, 4000)
     }    
 
