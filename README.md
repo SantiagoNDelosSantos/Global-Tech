@@ -6,7 +6,7 @@
 
 </div>
 
-https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png)
+<img align="center" src="https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png" alt="GlobalTech" />
 
 ## Tecnologías implementadas: 
 
@@ -21,34 +21,22 @@ GlobalTech es un eCommerce que emplea las siguientes tecnologías:
 * ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ### Secciones:
-
 GlobalTech cubre todas las etapas en la venta de un producto vía online, ya que cuenta con las siguientes secciones:
 
-* Una barra de navegación:
-
-https://i.ibb.co/3N75X5c/Captura-de-pantalla-2023-04-23-211354.png
-
-* Una presentación general de todos los productos:
-
-https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png
-
-* Un apartado de destalles para cada uno de los productos:
-
-https://i.ibb.co/vJqgHbP/Captura-de-pantalla-2023-04-23-211136.png
-
-* Un carrito de compras:
-https://i.ibb.co/GnGmJ5G/Captura-de-pantalla-2023-04-23-211221.png
-
-* Un formulario para la generación de la orden de compra:
-https://i.ibb.co/Cv1XbsD/Captura-de-pantalla-2023-04-23-220938.png
-
-* La entrega de la ID de la compra al cliente:
-
-https://i.ibb.co/HnMHD8B/Captura-de-pantalla-2023-04-23-211320.png
-
-* Generada la orden de compra la misma se recibe a través de Firebase:
-
-https://i.ibb.co/MyzXkPv/Captura-de-pantalla-2023-04-23-221914.png
+Una barra de navegación:
+<img align="center" alt="NavBar" src="https://i.ibb.co/3N75X5c/Captura-de-pantalla-2023-04-23-211354.png" />
+Una presentación general de todos los productos:
+<img align="center" alt="ItemListContainer" src="https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png" />
+Un apartado de destalles para cada uno de los productos:
+<img align="center" alt="ItemDetails" src="https://i.ibb.co/vJqgHbP/Captura-de-pantalla-2023-04-23-211136.png" />
+Un carrito de compras:
+<img align="center" alt="Cart" src="https://i.ibb.co/GnGmJ5G/Captura-de-pantalla-2023-04-23-211221.png" />
+Un formulario para la generación de la orden de compra:
+<img align="center" alt="Checkout" src="https://i.ibb.co/Cv1XbsD/Captura-de-pantalla-2023-04-23-220938.png" />
+La entrega de la ID de la compra al cliente:
+<img align="center" alt="OrderID" src="https://i.ibb.co/HnMHD8B/Captura-de-pantalla-2023-04-23-211320.png" />
+Generada la orden de compra la misma se recibe a través de Firebase:
+<img align="center" alt="FirebaseOrder" src="https://i.ibb.co/MyzXkPv/Captura-de-pantalla-2023-04-23-221914.png" />
 
 ## Dinamismo y escalabilidad: 
 
