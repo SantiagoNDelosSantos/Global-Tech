@@ -6,13 +6,15 @@
 
 </div>
 
-<img align="center" src="https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png" alt="GlobalTech" />
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png" alt="GlobalTech" />
+</div>
 
 ## Tecnologías implementadas: 
 
 GlobalTech es un eCommerce que emplea las siguientes tecnologías: 
 
-* [![React][React.js]][React-url]
+* ![React.js](https://img.shields.io/badge/-React.js-61DAFB?logo=react&logoColor=white&style=for-the-badge)
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/-CCS3-blue?style=for-the-badge&logo=css3&logoColor=white) 
@@ -24,19 +26,46 @@ GlobalTech es un eCommerce que emplea las siguientes tecnologías:
 GlobalTech cubre todas las etapas en la venta de un producto vía online, ya que cuenta con las siguientes secciones:
 
 Una barra de navegación:
-<img align="center" alt="NavBar" src="https://i.ibb.co/3N75X5c/Captura-de-pantalla-2023-04-23-211354.png" />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img alt="NavBar" src="https://i.ibb.co/3N75X5c/Captura-de-pantalla-2023-04-23-211354.png" />
+</div>
+
 Una presentación general de todos los productos:
-<img align="center" alt="ItemListContainer" src="https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png" />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img alt="ItemListContainer" src="https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png" />
+</div>
+
 Un apartado de destalles para cada uno de los productos:
-<img align="center" alt="ItemDetails" src="https://i.ibb.co/vJqgHbP/Captura-de-pantalla-2023-04-23-211136.png" />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img alt="ItemDetails" src="https://i.ibb.co/vJqgHbP/Captura-de-pantalla-2023-04-23-211136.png" />
+</div>
+
 Un carrito de compras:
-<img align="center" alt="Cart" src="https://i.ibb.co/GnGmJ5G/Captura-de-pantalla-2023-04-23-211221.png" />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img alt="Cart" src="https://i.ibb.co/GnGmJ5G/Captura-de-pantalla-2023-04-23-211221.png"/>
+</div>
+
 Un formulario para la generación de la orden de compra:
-<img align="center" alt="Checkout" src="https://i.ibb.co/Cv1XbsD/Captura-de-pantalla-2023-04-23-220938.png" />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img alt="Checkout" src="https://i.ibb.co/Cv1XbsD/Captura-de-pantalla-2023-04-23-220938.png" />
+</div>
+
 La entrega de la ID de la compra al cliente:
-<img align="center" alt="OrderID" src="https://i.ibb.co/HnMHD8B/Captura-de-pantalla-2023-04-23-211320.png" />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img alt="OrderID" src="https://i.ibb.co/HnMHD8B/Captura-de-pantalla-2023-04-23-211320.png" />
+</div>
+
 Generada la orden de compra la misma se recibe a través de Firebase:
-<img align="center" alt="FirebaseOrder" src="https://i.ibb.co/MyzXkPv/Captura-de-pantalla-2023-04-23-221914.png" />
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img alt="FirebaseOrder" src="https://i.ibb.co/MyzXkPv/Captura-de-pantalla-2023-04-23-221914.png" />
+</div>
 
 ## Dinamismo y escalabilidad: 
 
