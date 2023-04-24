@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+  <h1 align="center">GlobalTech</h1>
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías implementadas: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+GlobalTech es un eCommerce que emplea las siguientes tecnologías: 
 
-### `npm test`
+* [![React][React.js]][React-url]
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+* ![CSS3](https://img.shields.io/badge/-CCS3-blue?style=for-the-badge&logo=css3&logoColor=white) 
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+* ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+* ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Secciones:
 
-### `npm run build`
+GlobalTech cubre todas las etapas en la venta de un producto vía online, ya que cuenta con las siguientes secciones:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Una barra de navegación:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://i.ibb.co/3N75X5c/Captura-de-pantalla-2023-04-23-211354.png
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Una presentación general de todos los productos:
 
-### `npm run eject`
+https://i.ibb.co/5rMmJJq/Captura-de-pantalla-2023-04-23-211039.png
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Un apartado de destalles para cada uno de los productos:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://i.ibb.co/vJqgHbP/Captura-de-pantalla-2023-04-23-211136.png
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Un carrito de compras:
+https://i.ibb.co/GnGmJ5G/Captura-de-pantalla-2023-04-23-211221.png
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Un formulario para la generación de la orden de compra:
+https://i.ibb.co/Cv1XbsD/Captura-de-pantalla-2023-04-23-220938.png
 
-## Learn More
+* La entrega de la ID de la compra al cliente:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://i.ibb.co/HnMHD8B/Captura-de-pantalla-2023-04-23-211320.png
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Generada la orden de compra la misma se recibe a través de Firebase:
 
-### Code Splitting
+https://i.ibb.co/MyzXkPv/Captura-de-pantalla-2023-04-23-221914.png
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Dinamismo y escalabilidad: 
 
-### Analyzing the Bundle Size
+Las categorías de productos, los productos y las órdenes de compra, todo se genera de forma dinámica gracias al uso de Firebase, por lo que es posible agregar nuevas categorías y nuevos productos de forma simple y rápida, así como también actualizar el stock de un producto una vez que se terminan, todo ello sin necesidad de modificar el código propiamente dicho.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Versel:
 
-### Making a Progressive Web App
+Actualmente el proyecto se encuentra subido en Versel por lo que, si desea probarlo, puede acceder a él a través del siguiente enlace:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://global-tech-react.vercel.app

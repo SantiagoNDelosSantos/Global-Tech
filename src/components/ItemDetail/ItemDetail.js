@@ -49,13 +49,13 @@ const ItemDetail = ({id, img, img2, marca, modelo, description, color, precio, s
 
                 <p><strong>Stock:</strong> {stock} Und.</p>
 
-                <p><strong>Precio:</strong> ${precio}.</p>
+                <p><strong>Precio:</strong> USD {precio}.</p>
 
             </div>
 
             <div className='Carrito'>
 
-                        <ItemCount stock={stock} initial={productQuantity || 1} onAdd={handleOnAdd}/>
+                <ItemCount stock={stock} initial={productQuantity || 1} onAdd={handleOnAdd}/>
 
             </div>
 

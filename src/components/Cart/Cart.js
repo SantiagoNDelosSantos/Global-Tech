@@ -33,7 +33,7 @@ const Cart = () => {
 
                             <h2 className="Info1">{prod.marca} - {prod.modelo}</h2>
                                         
-                            <h2 className="Info2">${prod.precio} x Und.</h2>
+                            <h2 className="Info2">USD {prod.precio} x Und.</h2>
 
                             <h2 className="Info3">Stock: {prod.stock}.</h2>
 
@@ -60,7 +60,7 @@ const Cart = () => {
 
                     <button onClick={() => clearCart()} className="VaciarCart">Vaciar Cart</button>
 
-                    <h1 className="TotalCart">Total: ${total}</h1>
+                    <h1 className="TotalCart">Total: USD {total}</h1>
 
                     <Link to='/checkout' className="Option GenerarOrden1">Checkout</Link>
 

@@ -29,8 +29,6 @@ export const CartProvider = ({children}) => {
         return cart.some(prod => prod.id === id)
     }
 
-
-
     const getTotalQuantity = ( ) => {
 
         let totalQuantity = 0
